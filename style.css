@@ -1,0 +1,667 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;700&display=swap');
+
+:root {
+    --poppins: 'Poppins', sans-serif;
+
+    --button: #F2F2F2;
+    --negro: #333333;
+    --p: #4F4F4F;
+    --sm: #828282;
+    --celeste: #2D9CDB;
+    --pastel: #EB5757;
+}
+
+body {
+    margin-top: 14px;
+    margin-bottom: 0;
+    margin-left: 10px;
+    padding: 0;
+    min-width: 550px;
+
+    font-family: var(--poppins);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+
+header .logo {
+    font-weight: 700;
+    font-size: 24px;
+}
+
+/* Menu responsive */
+
+header input {
+    visibility: hidden;
+}
+
+header label img {
+    visibility: visible;
+    opacity: 1;
+    width: 40px;
+    position: absolute;
+    right: 1rem;
+    cursor: pointer;
+}
+
+header .navbar {
+    transform-origin: top;
+    transform: scaleY(0);
+    opacity: 0;
+}
+
+header input:checked~.navbar {
+    transform: scaleY(1);
+    opacity: 1;
+}
+
+
+/* ------ SECCIÓN PRESENTACIÓN ------ */
+#presentacion #celeste {
+    color: var(--celeste);
+    margin-left: 40px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+h2 {
+    color: var(--negro);
+    font-size: 24px;
+    font-weight: 500;
+    margin-left: 40px;
+}
+
+#creamos {
+    width: 360px;
+    height: 80px;
+}
+
+.banner img {
+    width: 84%;
+    border-radius: 18px;
+}
+
+.historia {
+    display: flex;
+    flex-direction: column;
+}
+
+#historia-emocion {
+    width: 260px;
+}
+
+.historia p {
+    width: 330px;
+    margin-left: 40px;
+    margin-top: -14px;
+
+    color: var(--p);
+    font-size: 12px;
+}
+
+.input-email {
+    margin-left: 40px;
+    margin-top: 15px;
+
+    font-size: 10px;
+    font-weight: 500;
+}
+
+#input {
+    padding: 8px 0;
+}
+
+input {
+    width: 350px;
+    height: 46px;
+    border-radius: 12px;
+    background-color: var(--button);
+    outline: none;
+    border: none;
+    text-indent: 14px;
+    font-family: var(--poppins);
+}
+
+::placeholder {
+    font-family: var(--poppins);
+    text-indent: 14px;
+    opacity: 0.5;
+}
+
+.input-email button {
+    border: none;
+    width: 86px;
+    height: 46px;
+    font-family: var(--poppins);
+
+    background-color: var(--celeste);
+    color: var(--button);
+    border-radius: 12px;
+
+    position: absolute;
+    right: 80px;
+    margin-top: -54.5px;
+}
+
+.input-email button:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+
+/* ------ SECCIÓN SERVICIOS ------ */
+#servicios {
+    width: 320px;
+    margin-top: 60px;
+}
+
+#servicio img {
+    width: 64px;
+    margin-top: 20px;
+    margin-bottom: -20px;
+}
+
+#uiux,
+#front,
+#back {
+    width: 100%;
+    margin-left: 10px;
+    padding: 20px 30px;
+    margin-bottom: 40px;
+}
+
+#uiux:hover,
+#front:hover,
+#back:hover {
+    box-shadow: 0 15px 30px #82828253;
+    border-radius: 20px;
+}
+
+#servicios button {
+    width: 116px;
+    height: 42px;
+    border-radius: 12px;
+    outline: none;
+    border: none;
+}
+
+#servicios button:hover {
+    background-color: var(--celeste);
+    color: var(--button);
+    cursor: pointer;
+}
+
+h4 {
+    font-size: 24px;
+}
+
+hr {
+    opacity: 0.3;
+    margin-left: 40px;
+    width: 100%;
+}
+
+
+/* <!-- ---- Sección diseños ---- --> */
+#diseños h2 {
+    width: 320px;
+}
+
+#diseños article {
+    width: 80%;
+    margin-left: 10px;
+}
+
+#diseños img {
+    width: 450px;
+    border-radius: 20px;
+}
+
+article p {
+    font-weight: 300;
+    font-size: 12px;
+}
+
+article h3 {
+    font-weight: 500;
+    font-size: 18px;
+    color: var(--negro);
+    margin-top: -10px;
+}
+
+.apps {
+    margin-top: -10px;
+    padding-bottom: 35px;
+}
+
+#ver-mas {
+    margin-top: -20px;
+    margin-left: 10px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+#ver-mas a {
+    display: flex;
+    align-items: center;
+    color: var(--celeste);
+}
+
+#ver-mas img {
+    width: 25px;
+    margin-left: 6px;
+}
+
+
+/* <!-- ---- Sección nosotros ---- -->  */
+#nosotros {
+    margin-left: 10px;
+}
+
+#equipo p {
+    margin-top: 90px;
+    color: var(--pastel);
+    font-weight: 500;
+    font-size: 16px;
+}
+
+#somos h2 {
+    margin-top: -12px;
+    margin-left: 0px;
+    width: 250px;
+}
+
+#equipo-relajado {
+    margin-top: -12px;
+    width: 250px;
+    font-size: 16px;
+}
+
+#foto-equipo img {
+    margin: 90px 0;
+    border-radius: 24px;
+    width: 162.25px;
+}
+
+#foto3 {
+    position: absolute;
+}
+
+#foto1-2 {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 120px;
+    top: 5015px;
+}
+
+#foto2 {
+    margin-top: -160px;
+}
+
+
+/* ------ Sección clientes ------ */
+#clientes {
+    margin-left: 10px;
+}
+
+#clientes h2 {
+    margin-left: 0;
+    margin-top: 90px;
+    width: 460px;
+}
+
+#imagen-carlos img {
+    width: 110px;
+    border-radius: 24px;
+}
+
+#nombre-gatsby {
+    position: absolute;
+    left: 150px;
+    margin-top: -90px;
+}
+
+#nombre {
+    color: var(--negro);
+    font-size: 20px;
+    font-weight: 500;
+    padding-bottom: 8px;
+}
+
+#gatsby {
+    color: var(--sm);
+    font-size: 14px;
+}
+
+footer {
+    background-color: #100E1D;
+    color: white;
+    width: 84%;
+    height: 694px;
+}
+
+footer a {
+    color: white;
+    font-size: 18px;
+}
+
+#footer-listas {
+    margin-top: 100px;
+    padding-top: 40px;
+}
+
+li {
+    margin: 16px;
+}
+
+#footer-listas a:hover {
+    border-bottom: 2px solid var(--pastel);
+}
+
+#edie {
+    margin-top: 70px;
+    margin-left: 58px;
+    font-weight: 800;
+    font-size: 36px;
+}
+
+#redes-sociales {
+    display: flex;
+    flex-direction: column;
+}
+
+#redes-sociales img {
+    width: 24px;
+    margin-left: 10px;
+}
+
+#iconos {
+    display: flex;
+    align-items: center;
+    height: 60px;
+    margin-left: 48px;
+}
+
+.lo-contactamos {
+    color: var(--sm);
+}
+
+#lo-contactamos-footer {
+    margin-top: 8px;
+}
+
+#button-footer {
+    height: 49px;
+    margin-top: 8px;
+    right: 79px;
+}
+
+#iannv {
+    font-size: 14px;
+    text-align: center;
+    opacity: 0.5;
+    margin-top: 120px;
+}
+
+#iannv span {
+    font-weight: 800;
+}
+
+
+
+
+/* -------------- Escritorio -------------- */
+@media(max-width: 949px) {
+    header input {
+        display: none;
+    }
+}
+
+@media(min-width: 950px) {
+    header .logo {
+        font-size: 46px;
+    }
+
+    header label img {
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    .header-contenedor {
+        width: 95%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-left: 50px;
+    }
+
+    .navbar a {
+        color: var(--negro);
+        font-size: 20px;
+        font-weight: 500;
+        padding-left: 20px;
+    }
+
+    .navbar a:hover {
+        color: var(--celeste);
+        opacity: 0.8;
+    }
+
+    .navbar ul {
+        display: flex;
+    }
+
+    #presentacion #celeste {
+        margin-left: 276px;
+        font-size: 18px;
+    }
+
+    h2 {
+        font-size: 48px;
+        margin-left: 276px;
+    }
+
+    #creamos {
+        width: 960px;
+        height: 160px;
+    }
+
+    .banner img {
+        width: 95%;
+        margin-left: 50px;
+    }
+
+    #historia-emocion {
+        width: 700px;
+    }
+
+    .historia p {
+        width: 470px;
+        font-size: 18px;
+        margin-left: 276px;
+    }
+
+    .input-email {
+        font-size: 14px;
+        margin-left: 276px;
+    }
+
+    .input-email button {
+        width: 86px;
+        height: 46px;
+    }
+
+    .input-email button {
+        left: 29.1%;
+    }
+
+    /* Sección servicios */
+
+    #servicios h2 {
+        width: 500px;
+        margin-top: 60px;
+    }
+
+    #servicios {
+        width: 100%;
+    }
+
+    #servicio {
+        display: flex;
+        margin-left: 230px;
+    }
+
+    hr {
+        display: none;
+    }
+
+    #servicio img {
+        width: 64px;
+        margin-top: 20px;
+        margin-bottom: -20px;
+    }
+
+    #uiux,
+    #front,
+    #back {
+        width: 22%;
+        margin-right: 150px;
+    }
+
+
+    /* <!-- ---- Sección diseños ---- --> */
+    #diseños,
+    #nosotros,
+    #clientes {
+        margin-left: 276px;
+    }
+
+    #diseños img {
+        width: 650px;
+    }
+
+    #diseños h2 {
+        width: 600px;
+        margin-left: 0;
+    }
+
+    #contenedor-diseños {
+        margin-top: 150px;
+    }
+
+    #contenedor-diseños2 {
+        position: absolute;
+        right: 260px;
+        margin-top: -1700px;
+    }
+
+    article p {
+        font-size: 16px;
+    }
+
+    article h3 {
+        font-size: 24px;
+    }
+
+    #ver-mas {
+        position: absolute;
+        right: 250px;
+        font-size: 24px;
+    }
+
+    #ver-mas img {
+        width: 26px;
+    }
+
+    /* ---- Sección nosotros ---- */
+
+    #somos h2 {
+        width: 500px;
+    }
+
+    #foto1 {
+        position: absolute;
+        margin-top: -220px;
+        margin-left: 1024px;
+    }
+
+    #foto1-2 {
+        margin-top: -1060px;
+        right: 250px;
+    }
+
+    /* ------ Sección clientes ------ */
+    #clientes h2 {
+        margin-top: 200px;
+        width: 910px;
+    }
+
+    #imagen-carlos img {
+        width: 136px;
+    }
+
+    #nombre-gatsby {
+        position: absolute;
+        left: 450px;
+        margin-top: -108px;
+    }
+
+    #nombre {
+        font-size: 24px;
+    }
+
+    #gatsby {
+        font-size: 18px;
+    }
+
+    /* ------ Footer ------ */
+    body {
+        margin: 0;
+    }
+
+    #footer {
+        display: flex;
+        justify-content: center;
+        align-items: first baseline;
+        margin-top: 100px;
+    }
+
+    footer {
+        width: 100%;
+        height: 380px;
+    }
+
+    #footer-listas {
+        margin-top: 10px;
+    }
+
+    #redes-sociales {
+        margin-left: 220px;
+    }
+
+    .input-email input {
+        display: flex;
+    }
+
+    #button-footer {
+        margin-top: -48px;
+        margin-left: 928px;
+    }
+
+    #iannv {
+        margin-top: 42px;
+    }
+
+
+}
